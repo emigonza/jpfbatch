@@ -1,0 +1,117 @@
+#! /bin/sh
+#
+# System startup script for the UPS monitoring daemon
+#
+### BEGIN INIT INFO
+# Provides: redjad
+# Required-Start: $syslog
+# Should-Start:
+# Required-Stop:  $syslog
+# Should-Stop:
+# Default-Start:  3 5
+# Default-Stop:   0 1 6
+# Short-Description: Comienza la lectura de datos del redja
+# Description:    Comienza la lectura de datos del redja
+### END INIT INFO
+
+# TOCAR SOLAMENTE DE ACA HASTA LA MARCA
+PROCESSNAME=jpfbatch_server
+JARNAME=/usr/local/jpfbatch/JPFBatch.jar
+PARAMETROS="-asserver"
+# NO TOCAR MAS NADA [ESTA ES LA MARCA]
+
+test -r $JARNAME || exit 5
+
+
+# Source SuSE config
+. /etc/rc.status
+
+rc_reset
+case "$1" in
+    start)
+        PROCESSID=`ps x | grep $PROCESSNAME | awk '{print \$1}' | awk 'NR>1{exit};1'`
+        # puede ser que sea el proceso del grep, así que hago un ps -A | grep $PROCESSID para estar seguro
+        if [[ -n $PROCESSID ]]; then
+            PROCESSID_CONF=`ps -A | grep $PROCESSID`
+            if [[ -n $PROCESSID_CONF ]]; then
+                # El proceso existe!!! lo hago percha
+                rc_failed
+                echo -n "$PROCESSNAME already running"
+            else
+                echo -n "Comenzando $PROCESSNAME"
+                EXEC="java -jar $JARNAME $PARAMETROS"
+                (exec -a $PROCESSNAME $EXEC)&
+            fi
+        else
+            echo -n "Comenzando $PROCESSNAME"
+            EXEC="java -jar $JARNAME $PARAMETROS > /dev/null"
+            (exec -a $PROCESSNAME $EXEC)&
+        fi
+        
+        rc_status -v
+        ;;
+    stop)
+        
+	PROCESSID=`ps x | grep $PROCESSNAME | awk '{print \$1}' | awk 'NR>1{exit};1'`
+        # puede ser que sea el proceso del grep, así que hago un ps -A | grep $PROCESSID para estar seguro
+        PROCESSID_CONF=`ps -A | grep $PROCESSID`
+        if [[ -n $PROCESSID ]]; then
+            if [[ -n $PROCESSID_CONF ]]; then
+                echo -n "Deteniendo $PROCESSNAME"
+                # El proceso existe!!! lo hago percha
+                EXEC="kill -9 $PROCESSID"
+                `$EXEC`
+            else
+                rc_failed 
+                echo -n "$PROCESSNAME not running"
+            fi
+        else
+            rc_failed 
+            echo -n "$PROCESSNAME not running"
+        fi
+        rc_status -v
+        ;;
+    try-restart)
+        $0 status >/dev/null && $0 restart
+        rc_status
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        rc_status
+        ;;
+    force-reload)
+        $0 try-restart
+        rc_status
+        ;;
+    reload)
+        $0 try-restart
+        rc_status
+        ;;
+    status)
+	PROCESSID=`ps x | grep $PROCESSNAME | awk '{print \$1}' | awk 'NR>1{exit};1'`
+        # puede ser que sea el proceso del grep, así que hago un ps -A | grep $PROCESSID para estar seguro
+        if [[ -n $PROCESSID ]]; then
+            PROCESSID_CONF=`ps -A | grep $PROCESSID`
+            if [[ -n $PROCESSID_CONF ]]; then
+                # El proceso existe!!! lo hago percha
+                echo -n "$PROCESSNAME"
+                rc_status -v
+            else
+                echo -n "$PROCESSNAME"
+                rc_failed 
+                rc_status -v
+            fi
+        else
+            echo -n "$PROCESSNAME"
+            rc_failed
+            rc_status -v
+        fi
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+        ;;
+esac
+rc_exit
+

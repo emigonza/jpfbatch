@@ -1,0 +1,44 @@
+16 Jun 2011 13:09:22,272 0    [main] DEBUG jpfbatch.pub.<clinit>(pub.java:104)  - pub iniciado
+16 Jun 2011 13:09:22,281 9    [main] DEBUG jpfbatch.pub.resolvePort(pub.java:172)  - El sistema operativo detectado es:Linux 64bit
+16 Jun 2011 13:09:22,283 11   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:206)  - utilizando driver ubicado en /u/jpfbatch/rxtx/linux_x86_64/
+16 Jun 2011 13:09:22,335 63   [main] DEBUG jpfbatch.Main.main(Main.java:91)  - Corriendo como servidor
+16 Jun 2011 13:12:20,084 0    [main] DEBUG jpfbatch.pub.<clinit>(pub.java:104)  - pub iniciado
+16 Jun 2011 13:12:20,093 9    [main] DEBUG jpfbatch.pub.resolvePort(pub.java:172)  - El sistema operativo detectado es:Linux 64bit
+16 Jun 2011 13:12:20,095 11   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:206)  - utilizando driver ubicado en /u/jpfbatch/rxtx/linux_x86_64/
+16 Jun 2011 13:12:20,146 62   [main] DEBUG jpfbatch.Main.main(Main.java:91)  - Corriendo como servidor
+16 Jun 2011 13:12:47,286 0    [main] DEBUG jpfbatch.pub.<clinit>(pub.java:104)  - pub iniciado
+16 Jun 2011 13:12:47,295 9    [main] DEBUG jpfbatch.pub.resolvePort(pub.java:172)  - El sistema operativo detectado es:Linux 64bit
+16 Jun 2011 13:12:47,297 11   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:206)  - utilizando driver ubicado en /u/jpfbatch/rxtx/linux_x86_64/
+16 Jun 2011 13:12:47,352 66   [main] DEBUG jpfbatch.Main.main(Main.java:91)  - Corriendo como servidor
+16 Jun 2011 13:13:03,422 0    [main] DEBUG jpfbatch.pub.<clinit>(pub.java:104)  - pub iniciado
+16 Jun 2011 13:13:03,431 9    [main] DEBUG jpfbatch.pub.resolvePort(pub.java:172)  - El sistema operativo detectado es:Linux 64bit
+16 Jun 2011 13:13:03,433 11   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:206)  - utilizando driver ubicado en /u/jpfbatch/rxtx/linux_x86_64/
+16 Jun 2011 13:13:03,484 62   [main] DEBUG jpfbatch.Main.main(Main.java:91)  - Corriendo como servidor
+16 Jun 2011 13:15:07,506 0    [main] DEBUG jpfbatch.pub.<clinit>(pub.java:104)  - pub iniciado
+16 Jun 2011 13:15:07,515 9    [main] DEBUG jpfbatch.pub.resolvePort(pub.java:172)  - El sistema operativo detectado es:Linux 64bit
+16 Jun 2011 13:15:07,517 11   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:206)  - utilizando driver ubicado en /u/jpfbatch/rxtx/linux_x86_64/
+16 Jun 2011 13:15:07,569 63   [main] DEBUG jpfbatch.Main.main(Main.java:91)  - Corriendo como servidor
+16 Jun 2011 13:16:40,321 0    [main] DEBUG jpfbatch.pub.<clinit>(pub.java:104)  - pub iniciado
+16 Jun 2011 13:16:40,330 9    [main] DEBUG jpfbatch.pub.resolvePort(pub.java:172)  - El sistema operativo detectado es:Linux 64bit
+16 Jun 2011 13:16:40,332 11   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:206)  - utilizando driver ubicado en /u/jpfbatch/rxtx/linux_x86_64/
+16 Jun 2011 13:16:40,384 63   [main] DEBUG jpfbatch.Main.main(Main.java:91)  - Corriendo como servidor
+16 Jun 2011 13:17:13,956 0    [main] DEBUG jpfbatch.pub.<clinit>(pub.java:104)  - pub iniciado
+16 Jun 2011 13:17:13,965 9    [main] DEBUG jpfbatch.pub.resolvePort(pub.java:172)  - El sistema operativo detectado es:Linux 64bit
+16 Jun 2011 13:17:13,967 11   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:206)  - utilizando driver ubicado en /u/jpfbatch/rxtx/linux_x86_64/
+16 Jun 2011 13:17:14,022 66   [main] DEBUG jpfbatch.Main.main(Main.java:91)  - Corriendo como servidor
+16 Jun 2011 13:17:32,969 1    [main] DEBUG jpfbatch.pub.<clinit>(pub.java:104)  - pub iniciado
+16 Jun 2011 13:17:32,978 10   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:172)  - El sistema operativo detectado es:Linux 64bit
+16 Jun 2011 13:17:32,980 12   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:206)  - utilizando driver ubicado en /u/jpfbatch/rxtx/linux_x86_64/
+16 Jun 2011 13:17:33,030 62   [main] DEBUG jpfbatch.Main.main(Main.java:91)  - Corriendo como servidor
+16 Jun 2011 13:18:39,581 0    [main] DEBUG jpfbatch.pub.<clinit>(pub.java:104)  - pub iniciado
+16 Jun 2011 13:18:39,599 18   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:172)  - El sistema operativo detectado es:Linux 64bit
+16 Jun 2011 13:18:39,601 20   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:206)  - utilizando driver ubicado en /u/jpfbatch/rxtx/linux_x86_64/
+16 Jun 2011 13:18:39,659 78   [main] DEBUG jpfbatch.Main.main(Main.java:91)  - Corriendo como servidor
+16 Jun 2011 13:18:51,855 0    [main] DEBUG jpfbatch.pub.<clinit>(pub.java:104)  - pub iniciado
+16 Jun 2011 13:18:51,865 10   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:172)  - El sistema operativo detectado es:Linux 64bit
+16 Jun 2011 13:18:51,867 12   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:206)  - utilizando driver ubicado en /u/jpfbatch/rxtx/linux_x86_64/
+16 Jun 2011 13:18:51,920 65   [main] DEBUG jpfbatch.Main.main(Main.java:91)  - Corriendo como servidor
+16 Jun 2011 13:19:46,902 0    [main] DEBUG jpfbatch.pub.<clinit>(pub.java:104)  - pub iniciado
+16 Jun 2011 13:19:46,911 9    [main] DEBUG jpfbatch.pub.resolvePort(pub.java:172)  - El sistema operativo detectado es:Linux 64bit
+16 Jun 2011 13:19:46,913 11   [main] DEBUG jpfbatch.pub.resolvePort(pub.java:206)  - utilizando driver ubicado en /u/jpfbatch/rxtx/linux_x86_64/
+16 Jun 2011 13:19:46,965 63   [main] DEBUG jpfbatch.Main.main(Main.java:91)  - Corriendo como servidor
